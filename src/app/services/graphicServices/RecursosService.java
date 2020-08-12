@@ -9,7 +9,7 @@ import java.awt.FontFormatException;
 import java.io.File;
 import java.io.IOException;
 
-/** @author Cristian Felipe Patiño Cáceres */
+/** @author Cristian Felipe Patiño Cáceres Github: CrissUD*/
 
 public class RecursosService {
 
