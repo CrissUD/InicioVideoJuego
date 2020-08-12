@@ -9,8 +9,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import app.services.servicesGraphics.ObjGraficosService;
-import app.services.servicesGraphics.RecursosService;
+import app.services.graphicServices.ObjGraficosService;
+import app.services.graphicServices.RecursosService;
 
 public class VistaPrincipalTemplate extends JFrame{
 
@@ -76,33 +76,36 @@ public class VistaPrincipalTemplate extends JFrame{
 
     public void crearJLabels(){
         iDimAux = new ImageIcon(iIcono1.getImage().getScaledInstance(60, 60, Image.SCALE_AREA_AVERAGING));
-        lIcono1 = sObjGraficos.construirJLabel(null, 85, 95, 60, 60, iDimAux, null, null, null, "c");
+        lIcono1 = sObjGraficos.construirJLabel(null, 85, 95, 60, 60, null, iDimAux, null, null, null,  null, "c");
         pIzquierda.add(lIcono1);
         
         iDimAux = new ImageIcon(iIcono2.getImage().getScaledInstance(60, 60, Image.SCALE_AREA_AVERAGING));
-        lIcono2 = sObjGraficos.construirJLabel(null, 85, 95, 60, 60, iDimAux, null, null, null, "c");
+        lIcono2 = sObjGraficos.construirJLabel(null, 85, 95, 60, 60, null, iDimAux, null, null, null,  null, "c");
         pCentro.add(lIcono2);
         
         iDimAux = new ImageIcon(iIcono3.getImage().getScaledInstance(60, 60, Image.SCALE_AREA_AVERAGING));
-        lIcono3 = sObjGraficos.construirJLabel(null, 85, 95, 60, 60, iDimAux, null, null, null, "c");
+        lIcono3 = sObjGraficos.construirJLabel(null, 85, 95, 60, 60, null, iDimAux, null, null, null,  null, "c");
         pDerecha.add(lIcono3);
         
         lTitulo1 = sObjGraficos.construirJLabel(
-            "Aventura", (230 - 150) / 2 , 50, 150, 30, null, Color.WHITE, null, sRecursos.getFontBotones(), "c"
+            "Aventura", (230 - 150) / 2 , 50, 150, 30, null, null, 
+            sRecursos.getFontBotones(), null, Color.WHITE, null, "c"
         );
         pIzquierda.add(lTitulo1);
         
         lTitulo2 = sObjGraficos.construirJLabel(
-            "Mundo Abierto", (230 - 150) / 2 , 50, 150, 30, null, Color.WHITE, null, sRecursos.getFontBotones(), "c"
+            "Mundo Abierto", (230 - 150) / 2 , 50, 150, 30, null, null, 
+            sRecursos.getFontBotones(), null, Color.WHITE, null, "c"
         );
         pCentro.add(lTitulo2);
         
         lTitulo3 = sObjGraficos.construirJLabel(
-            "Deportes", (230 - 150) / 2 , 50, 150, 30, null, Color.WHITE, null, sRecursos.getFontBotones(), "c"
+            "Deportes", (230 - 150) / 2 , 50, 150, 30, null, null, 
+            sRecursos.getFontBotones(), null, Color.WHITE, null, "c"
         );
         pDerecha.add(lTitulo3);
 
-        lFondo = sObjGraficos.construirJLabel(null, 0, 0, 1300, 700, iFondo, null, null, null, "l");
+        lFondo = sObjGraficos.construirJLabel(null, 0, 0, 1300, 700,  null, iFondo, null, null, null, null, "l");
         pFondo.add(lFondo);
     }
 

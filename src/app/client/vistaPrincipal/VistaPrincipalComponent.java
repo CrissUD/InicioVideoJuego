@@ -2,12 +2,12 @@ package app.client.vistaPrincipal;
 
 import javax.swing.JPanel;
 
+import app.services.graphicServices.RecursosService;
+
 import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
-import app.services.servicesGraphics.RecursosService;
 
 public class VistaPrincipalComponent implements ActionListener, MouseListener{
     

@@ -1,4 +1,4 @@
-package app.services.servicesGraphics;
+package app.services.graphicServices;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -8,6 +8,8 @@ import java.awt.FontFormatException;
 
 import java.io.File;
 import java.io.IOException;
+
+/** @author Cristian Felipe Patiño Cáceres */
 
 public class RecursosService {
 
